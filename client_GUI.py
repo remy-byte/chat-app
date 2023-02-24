@@ -1,8 +1,7 @@
 import socket
 import threading
 import tkinter as tk
-from tkinter import font
-from tkinter import ttk
+
 
 
 class CLIENT:
@@ -67,7 +66,7 @@ class CLIENT:
                               height=False)
 
         self.window.configure(width=500, height=500, bg="#E2D1F9")
-        self.label_name = tk.Label(master=self.window, text=f"You are logged as: {self.client_name}", font=("Aerial", 20), bg="#E2D1F9", fg="#101820")
+        self.label_name = tk.Label(master=self.window, text=f"You are logged in as: {self.client_name}", font=("Aerial", 20), bg="#E2D1F9", fg="#101820")
         self.label_name.place(relheight=0.1,
                               relx=0.15,)
 
